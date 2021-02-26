@@ -2,6 +2,7 @@
 
 ## 介紹程式碼
 
+## 找零錢
 ```C
 #include <stdio.h>
 int main()
@@ -13,6 +14,7 @@ int main()
 ```
 ![圖片](https://ibb.co/LtY6kLx)
 
+## 因數個數
 ```C
 #include <stdio.h>
 int main()
