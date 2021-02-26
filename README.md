@@ -12,7 +12,6 @@ int main()
 	printf("%d=50*%d+5*%d+1*%d\n",n,n/50,n%50/5,n%5);
 }
 ```
-![圖片](https://ibb.co/LtY6kLx)
 
 ## 因數個數
 ```C
@@ -28,7 +27,6 @@ int main()
 	printf("%d\n",a);
 }
 ```
-![圖片](https://ibb.co/tqN7XDp)
 
 ## 找倍數
 ```C
@@ -44,4 +42,31 @@ int main()
 	printf("%d\n",n);
 }
 ```
-![圖片]()
+
+## 整數轉換為等級
+```C
+#include <stdio.h>
+int main()
+{
+	int n;
+	scanf("%d",&n);
+	if(n>=90) printf("A\n");
+	else if(n>=80&&n< 90) printf("B\n");
+	else if(n>=60&&n< 80) printf("C\n");
+	else printf("F\n");
+}
+```
+
+## 分式化簡
+```C
+#include <stdio.h>
+int main()
+{
+	int n;
+	scanf("%d",&n);
+	if(n>=90) printf("A\n");
+	else if(n>=80&&n< 90) printf("B\n");
+	else if(n>=60&&n< 80) printf("C\n");
+	else printf("F\n");
+}
+```
