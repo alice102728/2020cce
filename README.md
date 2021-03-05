@@ -70,3 +70,63 @@ int main()
 	else printf("F\n");
 }
 ```
+
+## 讀入整數反序列印
+```C
+#include <stdio.h>
+int a[1000];
+int main()
+{
+	int n=0;
+	for(int i=0;i<1000;i++){
+		scanf("%d",&a[i]);
+		if(a[i]==0){
+		n=i;
+		break;}
+		}
+	for(int i=n-1;i>=0;i--){
+	printf("%d ",a[i]);
+	}
+	printf("\n");
+}
+```
+
+## A的B次方函數
+```C
+#include <stdio.h>
+int a[1000];
+int main()
+{
+	int n=0;
+	for(int i=0;i<1000;i++){
+		scanf("%d",&a[i]);
+		if(a[i]==0){
+		n=i;
+		break;}
+		}
+	for(int i=n-1;i>=0;i--){
+	printf("%d ",a[i]);
+	}
+	printf("\n");
+}
+```
+
+## 漸增數列相加
+```C
+#include <stdio.h>
+int a[1000];
+int main()
+{
+	int n=0;
+	for(int i=0;i<1000;i++){
+		scanf("%d",&a[i]);
+		if(a[i]==0){
+		n=i;
+		break;}
+		}
+	for(int i=n-1;i>=0;i--){
+	printf("%d ",a[i]);
+	}
+	printf("\n");
+}
+```
