@@ -185,7 +185,7 @@ int main()
 }
 ```
 
-##week03
+## week03
 ```C
 #include <stdio.h>
 int main()
@@ -205,3 +205,4 @@ int main()
     printf("\n");
 }
 ```
+```C
