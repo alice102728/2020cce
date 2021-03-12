@@ -304,3 +304,46 @@ int main()
 	printf("\n");
 }
 ```
+
+## 計算幾週與幾天
+```C
+#include <stdio.h>
+int main()
+{
+	int n;
+	scanf("%d",&n);
+	printf("%d %d\n",n/7,n%7);
+}
+```
+
+## 計程車資計算
+```C
+#include <stdio.h>
+int main()
+{
+	int n;
+	scanf("%d",&n);
+	if(n<=2000) printf("100");
+	else printf("%d\n",100+((n-2000+499)/500)*5);
+}
+```
+
+## 兩數間可被5整除的整數
+```C
+#include <stdio.h>
+int main()
+{
+	int a,b;
+	scanf("%d%d",&a,&b);
+	if(a<b)
+	for(int i=a;i<=b;i++){
+		if(i%5==0) printf("%d\n",i);
+		}
+	else
+	for(int i=b;i<=a;i++){
+		if(i%5==0) printf("%d\n",i);
+		}
+}
+```
+
+## 整數間最大距離
