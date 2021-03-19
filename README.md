@@ -450,3 +450,120 @@ int main()
     printf("%.2f %.2f %.2f\n", p->x, p->y, p->z);
 }
 ```
+
+## 進階題：除惡務盡
+```C
+#include <stdio.h>
+int main()
+{
+	int n;
+	scanf("%d",&n);
+	for(int i=1;i<=n;i++){
+		if(i%2==0) printf("%d ",i);
+		}
+}
+```
+
+## 進階題：擲骰統計
+```C
+#include <stdio.h>
+int main()
+{
+	char count[7]={0},a[100];
+	scanf("%s",&a);
+	int i=0;
+	while(a[i]!='\0'){
+		count[a[i]-'0']++;
+		i++;
+		}
+	for(int i=1;i<=6;i++){
+		printf("%d:%d\n",i,count[i]);
+		}
+}
+```
+
+## 進階題：函數找整數的最大數字
+```C
+#include <stdio.h>
+int main()
+{
+	char count[7]={0},a[100];
+	scanf("%s",&a);
+	int i=0;
+	while(a[i]!='\0'){
+		count[a[i]-'0']++;
+		i++;
+		}
+	for(int i=1;i<=6;i++){
+		printf("%d:%d\n",i,count[i]);
+		}
+}
+```
+
+## 進階題：星星等腰三角
+```C
+#include <stdio.h>
+int main()
+{
+	int n;
+	scanf("%d",&n);
+	for(int i=1;i<=n;i++){
+		for(int j=0;j<(n-i);j++){
+			printf(" ");
+		}
+		for(int j=0;j<(i*2-1);j++){
+			printf("*");
+		}
+	printf("\n");
+	}
+}
+```
+
+## 基礎題：分開整數的每個數字
+```C
+#include <stdio.h>
+int main()
+{
+	int n;
+	scanf("%d",&n);
+	printf("%d   %d   %d   %d   %d",n/10000,n%10000/1000,n%1000/100,n%100/10,n%10);
+}
+```
+
+## 基礎題：字元判別
+```C
+#include <stdio.h>
+int main()
+{
+	char a;
+	scanf("%c",&a);
+	if('A'<=a&&a<='Z') printf("U");
+	else if('a'<=a&&a<='z') printf("L");
+	else if('0'<=a&&a<='9') printf("D");
+	else printf("O");
+}
+```
+
+## 基礎題：數字之首
+```C
+#include <stdio.h>
+int main()
+{
+	char a[1000];
+	scanf("%s",&a);
+	printf("%c",a[0]);
+}
+```
+
+## 基礎題：輸出從0到N的偶數
+```C
+#include <stdio.h>
+int main()
+{
+	int n;
+	scanf("%d",&n);
+	for(int i=1;i<=n;i++){
+		if(i%2==0) printf("%d ",i);
+		}
+}
+```
