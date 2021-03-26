@@ -629,3 +629,39 @@ int main()
     }
 }
 ```
+
+## 進階題：反序數字
+```C
+#include <stdio.h>
+int main()
+{
+	int a,b,c=0;
+	scanf("%d",&a);
+	a=b;
+	while(a>=1){
+		c=a%10+c*10;
+		a/=10;
+	}
+	printf("%d+%d=%d\n",b,c,c+b);
+}
+```
+
+```C
+
+## 進階題：絕對值函數
+```C
+#include <stdio.h>
+int f(int n)
+{
+	if(n<0)
+	n=0-n;
+	return n;
+}
+int main(void)
+{
+	int n;
+	scanf("%d",&n);
+	printf("[%d]",f(n));
+	return 0;
+}
+```
