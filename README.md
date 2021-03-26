@@ -62,12 +62,13 @@ int main()
 #include <stdio.h>
 int main()
 {
-	int n;
-	scanf("%d",&n);
-	if(n>=90) printf("A\n");
-	else if(n>=80&&n< 90) printf("B\n");
-	else if(n>=60&&n< 80) printf("C\n");
-	else printf("F\n");
+	int a,b,n=0;
+	scanf("%d%d",&a,&b);
+	for(int i=1;i<=b;i++){
+		if(a%i==0 && b%i==0)
+		n=i;
+	}
+	printf("%d %d\n",a/n,b/n);
 }
 ```
 
@@ -109,9 +110,7 @@ int main()
 }
 ```
 
-## 讀入整數反序列印
-設計一個程式，該程式可以連續讀入正整數(輸入0表示結束，至多不超過10個正整數)，之後將所輸入的正整數以相反序顯示在畫面上。 
-數字範圍：整數 1 – 1000  
+## 讀入整數反序列印  
 ```C
 #include <stdio.h>
 int a[1000];
@@ -132,11 +131,14 @@ int main()
 ```
 
 ## A的B次方函數
-題目名稱：A的B次方函數
-題目內容：請撰寫一個函數MYPOWER(A,B)，可以計算A^B結果。
-數字範圍：整數 1 – 9。
-程式限制：不得使用power()函數。不得變更已給定的主程式。
-主程式：
+#include <stdio.h>
+int MYPOWER(int a,int b)
+{
+	int ans=1;
+	for(int i=1;i<=b;i++)
+		ans*=a;
+		return ans;
+}
 int main(void)
 {
 	int a,b;
@@ -144,44 +146,19 @@ int main(void)
 	printf("[%d]",MYPOWER(a,b));
 	return 0;
 }
-```C
-#include <stdio.h>
-int a[1000];
-int main()
-{
-	int n=0;
-	for(int i=0;i<1000;i++){
-		scanf("%d",&a[i]);
-		if(a[i]==0){
-		n=i;
-		break;}
-		}
-	for(int i=n-1;i>=0;i--){
-	printf("%d ",a[i]);
-	}
-	printf("\n");
-}
 ```
 
 ## 漸增數列相加
-輸入正整數n，計算1*2+2*3+3*4+…+(n-1)*n之和。 
-數字範圍：整數1 – 1000  
 ```C
 #include <stdio.h>
-int a[1000];
 int main()
 {
-	int n=0;
-	for(int i=0;i<1000;i++){
-		scanf("%d",&a[i]);
-		if(a[i]==0){
-		n=i;
-		break;}
-		}
-	for(int i=n-1;i>=0;i--){
-	printf("%d ",a[i]);
+	int n,ans=0;
+	scanf("%d",&n);
+	for(int i=2;i<=n;i++){
+		ans+=(i-1)*i;
 	}
-	printf("\n");
+	printf("%d\n",ans);
 }
 ```
 
@@ -488,20 +465,35 @@ int main()
 
 ## 進階題：函數找整數的最大數字
 ```C
-#include <stdio.h>
-int main()
+#include<iostream>
+using namespace std;
+
+int max_digit(int n)
 {
-	char count[7]={0},a[100];
-	scanf("%s",&a);
-	int i=0;
-	while(a[i]!='\0'){
-		count[a[i]-'0']++;
-		i++;
-		}
-	for(int i=1;i<=6;i++){
-		printf("%d:%d\n",i,count[i]);
-		}
+	int max;
+	max=n%10;
+	while(n>0)
+	{
+		if((n%10)>max)
+		max=n%10;
+		n/=10;
+	}
+	return max;
 }
+
+int main(){
+  int n;cin>>n;
+  cout<<"["<<max_digit(n)<<"]";
+  return 0;
+}
+/* 上方C++ 的 main 函數 等價於 下方 C 的 main 函數
+int main(void){
+  int n;
+  scanf("%d", &n);
+  printf("[%d]", max_digit(n));
+  return 0;
+}
+*/
 ```
 
 ## 進階題：星星等腰三角
