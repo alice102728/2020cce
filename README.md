@@ -646,8 +646,6 @@ int main()
 }
 ```
 
-```C
-
 ## 進階題：絕對值函數
 ```C
 #include <stdio.h>
@@ -663,5 +661,45 @@ int main(void)
 	scanf("%d",&n);
 	printf("[%d]",f(n));
 	return 0;
+}
+```
+
+## 基礎題：N數之和
+```C
+#include <stdio.h>
+int main()
+{
+	int n,a[100],ans=0;
+	scanf("%d",&n);
+	for(int i=1;i<=n;i++){
+		scanf("%d",&a[i]);
+		ans+=a[i];
+		}
+	printf("%d\n",ans);
+}
+```
+
+## 基礎題：三數極大
+```C
+#include <stdio.h>
+int main()
+{
+	int a,b,c;
+	scanf("%d%d%d",&a,&b,&c);
+	if(a>b&&a>c) printf("%d\n",a);
+	if(b>a&&b>c) printf("%d\n",b);
+	if(c>a&&c>b) printf("%d\n",c);
+}
+```
+
+## 基礎題：計算商數
+
+```C
+#include <stdio.h>
+int main()
+{
+	int a,b;
+	scanf("%d%d",&a,&b);
+	printf("%d\n",a/b);
 }
 ```
