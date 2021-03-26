@@ -456,11 +456,15 @@ int main()
 #include <stdio.h>
 int main()
 {
-	int n;
-	scanf("%d",&n);
-	for(int i=1;i<=n;i++){
-		if(i%2==0) printf("%d ",i);
+	char a[100];
+	scanf("%s",&a);
+	int i=0;
+	while(a[i]!='\0'){
+		if(a[i]!='2')
+		printf("%c",a[i]);
+		i++;
 		}
+		printf("\n");
 }
 ```
 
