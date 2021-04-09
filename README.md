@@ -705,7 +705,7 @@ int main()
 ```
 
 ## week07
-##字串排序
+## 字串排序
 ```C
 #include <stdio.h>
 #include <string.h>
