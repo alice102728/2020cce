@@ -131,6 +131,7 @@ int main()
 ```
 
 ## A的B次方函數
+```C
 #include <stdio.h>
 int MYPOWER(int a,int b)
 {
