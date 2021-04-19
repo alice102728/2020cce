@@ -862,3 +862,90 @@ int main()
 	printf("%d=50*%d+10*%d+5*%d+1*%d",n,n/50,n%50/10,n%10/5,n%5);
 }
 ```
+
+## week08
+1. 利用上週的考試題目, 練習 字串 (宣告、讀、印) , 請用瘋狂程設-第07週-考試題目「字串排序」,用練習模式,寫到一半, 不用寫完。 (只要把字串的宣告、讀、印 完成)
+
+2. 接續上題, 利用上週的考試題目, 示範如何用 qsort() 完成字串排序
+
+3. 本週考試題目 UVA 10420 計算國名的次數, 我們模仿上面的作法, 先有字串(宣告、讀、印),再有 qsort() 進行排序。請用練習模式, 還沒有金牌哦! :)
+
+4. 將 UVA 10420 完成, 其中在數數的過程, 是個 for迴圈,if判斷, 再印出頭、尾
+
+5. 今天的題目 UVA 10226 要統計樹的數目, 老師分成4個步驟: (1) 字串 (宣告、讀、印)不知道幾筆... (2) 字串排序 qsort() 自己compare(), (3) 數數字 for(迴圈), (4) 印出答案, 先做 (1) 字串(宣告、讀、印)
+
+6. 再做 (2) 字串排序
+
+7. 最後做 (3) 數數字, (4) 印出答案, 其中需要用到  100 * ans / (float) N  這種轉換,讓整數除法,變成float除法
+```C
+#include <stdio.h>
+#include <string.h>
+#include <stdlib.h>
+char name[2000][80];
+int compare (const void*p1,const void*p2)
+{
+	return strcmp((char*)p1,(char*)p2);
+}
+char trash[80];
+int main()
+{
+	int n;
+	scanf("%d",&n);
+
+	for(int i=0;i<n;i++){
+		scanf("%s",name[i]);
+		gets(trash);
+	}
+	qsort(name,n,80,compare);
+	int ans=1;
+	printf("%s ",name[0]);
+	for(int i=0;i<n-1;i++){
+		if(strcmp(name[i],name[i+1])!=0){
+			printf("%d\n",ans);
+			printf("%s ",name[i+1]);
+			ans=1;
+		}else ans++;
+	}
+	printf("%d\n",ans);
+}
+```
+```C
+#include <stdio.h>
+#include <string.h>
+#include <stdlib.h>
+char tree[1000000][32];
+int compare(const void*p1,const void*p2){
+    return strcmp((char*)p1,(char*)p2);
+}
+int main()
+{
+    int T;
+    scanf("%d\n\n",&T);
+
+    int N=0;
+    for(int i=0;    ;i++){
+        char*now=gets(tree[i]);
+        if(now==NULL){
+            N=i;
+            break;
+        }
+        if(strcmp(tree[i],"")==0){
+            N=i;
+            break;
+        }
+    }
+
+    qsort(tree,N,32,compare);
+
+    printf("%s ",tree[0]);
+    int ans=1;
+    for(int i=0;i<N-1;i++){
+        if(strcmp(tree[i],tree[i+1])!=0){
+            printf("%d\n",ans);
+            printf("%s ",tree[i+1]);
+            ans=1;
+           }else ans++;
+    }
+    printf("%d\n",ans);
+}
+```
