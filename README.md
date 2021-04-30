@@ -992,3 +992,115 @@ int main()
 	}
 }
 ```
+
+## 進階題：最大公因數gcd
+```C
+#include <stdio.h>
+int main()
+{
+	int a,b,min,ans;
+	printf("Enter two integers: \n");
+	scanf("%d%d",&a,&b);
+	if(a>b) min=b;
+	else min=a;
+	for(int i=2;i<=min;i++){
+		if(a%i==0&&b%i==0)
+		ans=i; 
+		}
+	printf("The greatest common divisor of %d and %d is %d\n",a,b,ans);
+}
+```
+
+## 進階題：字串長度
+```C
+#include <stdio.h>
+#include <string.h>
+int main()
+{
+	char a[100],b[100];
+	scanf("%s%s",&a,&b);
+	int lena=strlen(a),lenb=strlen(b);
+	if(lena>lenb) printf("1");
+	else if(lena<lenb) printf("-1");
+	else{
+		printf("%d",strcmp(a,b));
+	}
+}
+```
+
+## 進階題：函數判斷質數
+```C
+```
+
+## 進階題：判斷迴文
+```C
+#include <stdio.h>
+#include <string.h>
+int main()
+{
+	int i;
+	char a[80];
+	scanf("%s",&a);
+	int len=strlen(a);
+	for(i=0;i<len/2;i++){
+		if(a[i]!=a[len-1-i]) break;
+	}
+	if(i==len/2) printf("YES");
+	else printf("NO");
+}
+```
+
+## 基礎題：計算餘數及列印
+```C
+#include <stdio.h>
+int main()
+{
+	int x,y;
+	scanf("%d%d",&x,&y);
+	printf("Enter two numbers: The remainder is %d\n",x%y);
+}
+```
+
+## 基礎題：判別正方形
+```C
+#include <stdio.h>
+int main()
+{
+	int a,b;
+	scanf("%d%d",&a,&b);
+	printf("Enter two numbers: ");
+	if(a==b) printf(" It is a square ");
+	else printf(" It is not a square ");
+}
+```
+
+## 基礎題：將一連串整數相乘
+```C
+#include <stdio.h>
+int a[100];
+int main()
+{
+	int n,ans=1;
+	scanf("%d",&n);
+	printf("Enter the number of values to be processed: ");
+	for(int i=1;i<=n;i++){
+		scanf("%d",&a[i]);
+		printf("Enter a value: ");
+		ans*=a[i];
+		}
+		printf("Product of the %d values is %d",n,ans);
+	}
+```
+
+## 基礎題：平年月份的天數
+```C
+#include <stdio.h>
+int main()
+{
+	int n;
+	scanf("%d",&n);
+	if(n==2) printf("28");
+	else if(n==4||n==6||n==9||n==11) printf("30");
+	else printf("31");
+}
+```
