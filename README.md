@@ -1225,3 +1225,118 @@ int main()
     printf("%c %d\n", box.c, box.ans );
 }
 ```
+
+## 進階題：字串中的數字個數
+```C
+```
+## 進階題：利用自訂函式最大值max與最小值min求出兩者之差
+```C
+#include<iostream>
+using namespace std;
+int max(int a,int b,int c,int d)
+{
+	int x=a;
+	if(x<b) x=b;
+	if(x<c) x=c;
+	if(x<d) x=d;
+	return x;
+}
+int min(int a,int b,int c,int d)
+{
+	int x=a;
+	if(x>b) x=b;
+	if(x>c) x=c;
+	if(x>d) x=d;
+	return x;
+}
+int main(){
+  int a,b,c,d;cin>>a>>b>>c>>d;
+  cout<<(max(a,b,c,d)-min(a,b,c,d));
+  return 0;
+}
+/* 上方C++ main 函式 等同於 下方 C 的 main 函式
+int main(void){
+  int a, b, c, d;
+  scanf("%d %d %d %d", &a, &b, &c, &d);
+  printf("%d",  max(a,b,c,d) - min(a,b,c,d) );
+  return 0;
+}
+*/
+```
+## 進階題：奇數之和
+```C
+#include <stdio.h>
+int main()
+{
+	int n,ans=0;
+	scanf("%d",&n);
+	for(int i=1;i<=n;i++){
+		if(i%2==1)
+		ans+=i;
+	}
+	printf("%d",ans);
+}
+```
+## 進階題：兩數間可被7整除的數
+```C
+#include <stdio.h>
+int main()
+{
+	int a,b;
+	scanf("%d%d",&a,&b);
+	for(int i=a;i<=b;i++){
+		if(i%7==0)
+		printf("%d ",i);
+		}
+}
+```
+## 基礎題：整數二元四則運算
+```C
+#include <stdio.h>
+int main()
+{
+	int a,b;
+	char c;
+	scanf("%d %c %d",&a,&c,&b);
+	if(c=='+') printf("%d",a+b);
+	if(c=='-') printf("%d",a-b);
+	if(c=='*') printf("%d",a*b);
+	if(c=='/') printf("%d",a/b);
+}
+```
+## 基礎題：幾日為星期幾
+```C
+#include <stdio.h>
+int main()
+{
+	int a;
+	scanf("%d",&a);
+	if(a%7==1) printf("0");
+	else if(a%7==2) printf("1");
+	else if(a%7==3) printf("2");
+	else if(a%7==4) printf("3");
+	else if(a%7==5) printf("4");
+	else if(a%7==6) printf("5");
+	else printf("6");
+}
+```
+## 基礎題：零錢總額
+```C
+#include <stdio.h>
+int main()
+{
+	int a,b,c;
+	scanf("%d%d%d",&a,&b,&c);
+	printf("%d",a*50+b*5+c*1);
+}
+```
+## 基礎題：兩數平方差
+```C
+#include <stdio.h>
+int main()
+{
+	int a,b;
+	scanf("%d%d",&a,&b);
+	printf("%d",a*a-b*b);
+}
+```
