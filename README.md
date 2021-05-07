@@ -1228,6 +1228,19 @@ int main()
 
 ## 進階題：字串中的數字個數
 ```C
+#include <stdio.h>
+int main()
+{
+	char a[81];
+	int count=0;
+	scanf("%s",&a);
+	int i=0;
+	while(a[i]!='\0'){
+		if('0'<=a[i]&&a[i]<='9') count++;
+		i++;
+	}
+	printf("%d",count);
+}
 ```
 ## 進階題：利用自訂函式最大值max與最小值min求出兩者之差
 ```C
