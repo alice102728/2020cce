@@ -1500,4 +1500,36 @@ int main()
 }
 ```
 
-## 
+## 進階題：計算質數個數
+```C
+#include <stdio.h>
+int main()
+{
+	int a,b,count=0,j;
+	scanf("%d %d",&a,&b);
+	for(int i=a;i<=b;i++){
+		for(j=2;j<i;j++){
+			if(i%j==0) break;
+			}
+		if(j==i) count++;
+	}
+	printf("%d",count);
+}
+```
+
+## 進階題：三數組合
+```C
+
+```
+
+## 基礎題：找千位數
+```C
+#include <stdio.h>
+int main()
+{
+	int n;
+	scanf("%d",&n);
+	printf("%d",n/1000%10);
+
+}
+```
