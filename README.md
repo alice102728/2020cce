@@ -1431,3 +1431,73 @@ int main()
 }
 ```
 
+## 進階題：數字個數
+```C
+#include <stdio.h>
+int main()
+{
+	int a,ans=0;
+	while(scanf("%d",&a)!=EOF){
+		ans++;
+	}
+	printf("%d",ans-1);
+}
+```
+
+## 基礎題：剩餘啤酒有幾手又幾瓶
+```C
+#include <stdio.h>
+int main()
+{
+	int p,d;
+	scanf("%d%d",&p,&d);
+	printf("%d %d",(p-6*d)/6,(p-6*d)%6);
+}
+```
+
+## 基礎題：三數最小
+```C
+#include <stdio.h>
+int min(int a,int b,int c)
+{
+	int ans=a;
+	if(ans>b) ans=b;
+	if(ans>c) ans=c;
+	return ans;
+}
+int main()
+{
+	int x,y,z;
+	scanf("%d%d%d",&x,&y,&z);
+	printf("%d\n",min(x,y,z));
+}
+```
+
+## 基礎題：計算立方值
+```C
+#include <stdio.h>
+int main()
+{
+	int a[6];
+	for(int i=0;i<6;i++){
+		scanf("%d",&a[i]);
+		printf("%d\n",a[i]*a[i]*a[i]);
+	}
+}
+```
+
+## 進階題：判斷平方數
+```C
+#include <stdio.h>
+int main()
+{
+	int n,ans=0;
+	scanf("%d",&n);
+	for(int i=1;i<n;i++){
+		if(i*i==n) ans=i;
+	}
+	printf("%d",ans);
+}
+```
+
+## 
