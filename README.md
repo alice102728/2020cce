@@ -2,6 +2,7 @@
 
 ## 介紹程式碼
 
+## week01
 ## 找零錢
 ```C
 #include <stdio.h>
@@ -12,7 +13,6 @@ int main()
 	printf("%d=50*%d+5*%d+1*%d\n",n,n/50,n%50/5,n%5);
 }
 ```
-
 ## 因數個數
 ```C
 #include <stdio.h>
@@ -27,7 +27,6 @@ int main()
 	printf("%d\n",a);
 }
 ```
-
 ## 找倍數
 ```C
 #include <stdio.h>
@@ -42,7 +41,6 @@ int main()
 	printf("%d\n",n);
 }
 ```
-
 ## 整數轉換為等級
 ```C
 #include <stdio.h>
@@ -56,7 +54,6 @@ int main()
 	else printf("F\n");
 }
 ```
-
 ## 分式化簡
 ```C
 #include <stdio.h>
@@ -88,7 +85,6 @@ int main()
     printf("n1:%d n2:%d n3:%d\n",n1,n2,n3);
 }
 ```
-
 ```C
 #include <stdio.h>
 int main()
@@ -109,7 +105,6 @@ int main()
     printf("n[0]:%d,n[1]:%d,n[2]:%d",n[0],n[1],n[2]);
 }
 ```
-
 ## 讀入整數反序列印  
 ```C
 #include <stdio.h>
@@ -129,7 +124,6 @@ int main()
 	printf("\n");
 }
 ```
-
 ## A的B次方函數
 ```C
 #include <stdio.h>
@@ -148,7 +142,6 @@ int main(void)
 	return 0;
 }
 ```
-
 ## 漸增數列相加
 ```C
 #include <stdio.h>
@@ -184,7 +177,6 @@ int main()
 }
 ```
 ```C
-  
 #include <stdio.h>
 int a[5]={ 0,10,20,30,40};
 void printAll(){
@@ -206,7 +198,6 @@ int main()
 }
 ```
 ```C
-  
 #include <stdio.h>
 int a[5]={ 0,10,20,30,40};
 void printAll(){
@@ -243,7 +234,6 @@ int main(){
     return 0;
 }
 ```
-
 ## 計算陣列的平方值
 ```C
 #include <stdio.h>
@@ -259,7 +249,6 @@ int main()
 		printf("\n");
 }
 ```
-
 ## 大小寫轉換
 ```C
 #include <stdio.h>
@@ -282,7 +271,6 @@ int main()
 	printf("\n");
 }
 ```
-
 ## 計算幾週與幾天
 ```C
 #include <stdio.h>
@@ -293,7 +281,6 @@ int main()
 	printf("%d %d\n",n/7,n%7);
 }
 ```
-
 ## 計程車資計算
 ```C
 #include <stdio.h>
@@ -305,7 +292,6 @@ int main()
 	else printf("%d\n",100+((n-2000+499)/500)*5);
 }
 ```
-
 ## 兩數間可被5整除的整數
 ```C
 #include <stdio.h>
@@ -323,7 +309,6 @@ int main()
 		}
 }
 ```
-
 ## 整數間最大距離
 ```C
 #include <stdio.h>
@@ -355,7 +340,6 @@ int main()
     struct POINT a;
 }
 ```
-
 ```C
 #include <stdio.h>
 
@@ -369,7 +353,6 @@ int main()
     printf("%f %f\n", a.x, a.y );
 }
 ```
-
 ```C
 #include <stdio.h>
 struct POINT {
@@ -386,7 +369,6 @@ int main(){
     return 0;
 }
 ```
-
 ```C
 #include <stdio.h>
 struct DATA {
@@ -407,7 +389,6 @@ int main()
     printf("c: %d %d\n", c.x, c.y);
 }
 ```
-
 ```C
 #include <stdio.h>
 struct POINT {
@@ -428,7 +409,6 @@ int main()
     printf("%.2f %.2f %.2f\n", p->x, p->y, p->z);
 }
 ```
-
 ## 進階題：除惡務盡
 ```C
 #include <stdio.h>
@@ -445,7 +425,6 @@ int main()
 		printf("\n");
 }
 ```
-
 ## 進階題：擲骰統計
 ```C
 #include <stdio.h>
@@ -463,7 +442,6 @@ int main()
 		}
 }
 ```
-
 ## 進階題：函數找整數的最大數字
 ```C
 #include<iostream>
@@ -496,7 +474,6 @@ int main(void){
 }
 */
 ```
-
 ## 進階題：星星等腰三角
 ```C
 #include <stdio.h>
@@ -515,7 +492,6 @@ int main()
 	}
 }
 ```
-
 ## 基礎題：分開整數的每個數字
 ```C
 #include <stdio.h>
@@ -526,7 +502,6 @@ int main()
 	printf("%d   %d   %d   %d   %d",n/10000,n%10000/1000,n%1000/100,n%100/10,n%10);
 }
 ```
-
 ## 基礎題：字元判別
 ```C
 #include <stdio.h>
@@ -540,7 +515,6 @@ int main()
 	else printf("O");
 }
 ```
-
 ## 基礎題：數字之首
 ```C
 #include <stdio.h>
@@ -551,7 +525,6 @@ int main()
 	printf("%c",a[0]);
 }
 ```
-
 ## 基礎題：輸出從0到N的偶數
 ```C
 #include <stdio.h>
@@ -577,7 +550,6 @@ int main()
      printf("%s\n",line2);
 }
 ```
-
 ```C
 #include <stdio.h>
 int main()
@@ -594,7 +566,6 @@ int main()
      printf("你看看你看看,現在印出來的line4: ==%s==\n",line4);
 }
 ```
-
 ```C
 #include <stdio.h>
 int main()
@@ -606,7 +577,6 @@ int main()
     }
 }
 ```
-
 ```C
 #include <stdio.h>
 int main()
@@ -614,7 +584,6 @@ int main()
     printf("請看看值是多少: %d",'\0');
 }
 ```
-
 ```C
 #include <stdio.h>
 #include <string.h>
@@ -630,7 +599,6 @@ int main()
     }
 }
 ```
-
 ## 進階題：反序數字
 ```C
 #include <stdio.h>
@@ -646,7 +614,6 @@ int main()
 	printf("%d+%d=%d\n",b,c,c+b);
 }
 ```
-
 ## 進階題：絕對值函數
 ```C
 #include <stdio.h>
@@ -664,7 +631,6 @@ int main(void)
 	return 0;
 }
 ```
-
 ## 基礎題：N數之和
 ```C
 #include <stdio.h>
@@ -679,7 +645,6 @@ int main()
 	printf("%d\n",ans);
 }
 ```
-
 ## 基礎題：三數極大
 ```C
 #include <stdio.h>
@@ -692,9 +657,7 @@ int main()
 	if(c>a&&c>b) printf("%d\n",c);
 }
 ```
-
 ## 基礎題：計算商數
-
 ```C
 #include <stdio.h>
 int main()
@@ -732,8 +695,6 @@ int mian()
 	}
 }
 ```
-
-
 ## 進階題：迴文判斷 
 ```C
 #include <stdio.h>
@@ -745,7 +706,6 @@ int main()
 	else printf("NO\n");
 }
 ```
-
 ## 進階題：函數反序排列數字
 ```C
 #include <stdio.h>
@@ -762,7 +722,6 @@ int main()
 	printf("\n");
 }
 ```
-
 ## 進階題：陣列找出現次數
 ```C
 #include <stdio.h>
@@ -781,7 +740,6 @@ int main()
 		printf("%d\n",count);
 }
 ```
-
 ## 進階題：判斷大小
 ```C
 #include <stdio.h>
@@ -797,7 +755,6 @@ int main(){
     return 0;
 }
 ```
-
 ## 進階題：計算一列整數的總和
 ```C
 #include <stdio.h>
@@ -813,7 +770,6 @@ int main()
 	printf("The total is: %d",sum-999);
 }
 ```
-
 ## 基礎題：計算餘數
 ```C
 #include <stdio.h>
@@ -824,7 +780,6 @@ int main()
 	printf("%d",a%b);
 }
 ```
-
 ## 基礎題：整數轉換等級
 ```C
 #include <stdio.h>
@@ -839,7 +794,6 @@ int main()
 	else printf("F");
 }
 ```
-
 ## 基礎題：計程車資計算
 ```C
 #include <stdio.h>
@@ -851,7 +805,6 @@ int main()
 	else printf("%d",105+((n-1500)/250)*5);
 }
 ```
-
 ## 基礎題：找零錢
 ```C
 #include <stdio.h>
@@ -865,17 +818,11 @@ int main()
 
 ## week08
 1. 利用上週的考試題目, 練習 字串 (宣告、讀、印) , 請用瘋狂程設-第07週-考試題目「字串排序」,用練習模式,寫到一半, 不用寫完。 (只要把字串的宣告、讀、印 完成)
-
 2. 接續上題, 利用上週的考試題目, 示範如何用 qsort() 完成字串排序
-
 3. 本週考試題目 UVA 10420 計算國名的次數, 我們模仿上面的作法, 先有字串(宣告、讀、印),再有 qsort() 進行排序。請用練習模式, 還沒有金牌哦! :)
-
 4. 將 UVA 10420 完成, 其中在數數的過程, 是個 for迴圈,if判斷, 再印出頭、尾
-
 5. 今天的題目 UVA 10226 要統計樹的數目, 老師分成4個步驟: (1) 字串 (宣告、讀、印)不知道幾筆... (2) 字串排序 qsort() 自己compare(), (3) 數數字 for(迴圈), (4) 印出答案, 先做 (1) 字串(宣告、讀、印)
-
 6. 再做 (2) 字串排序
-
 7. 最後做 (3) 數數字, (4) 印出答案, 其中需要用到  100 * ans / (float) N  這種轉換,讓整數除法,變成float除法
 ```C
 #include <stdio.h>
@@ -992,7 +939,6 @@ int main()
 	}
 }
 ```
-
 ## 進階題：最大公因數gcd
 ```C
 #include <stdio.h>
@@ -1010,7 +956,6 @@ int main()
 	printf("The greatest common divisor of %d and %d is %d\n",a,b,ans);
 }
 ```
-
 ## 進階題：字串長度
 ```C
 #include <stdio.h>
@@ -1027,7 +972,6 @@ int main()
 	}
 }
 ```
-
 ## 進階題：函數判斷質數
 ```C
 #include <iostream>
@@ -1055,7 +999,6 @@ int main(void){
 }
 */
 ```
-
 ## 進階題：判斷迴文
 ```C
 #include <stdio.h>
@@ -1072,9 +1015,7 @@ int main()
 	if(i==len/2) printf("YES");
 	else printf("NO");
 }
-```
-
-## 基礎題：計算餘數及列印
+```## 基礎題：計算餘數及列印
 ```C
 #include <stdio.h>
 int main()
@@ -1084,7 +1025,6 @@ int main()
 	printf("Enter two numbers: The remainder is %d\n",x%y);
 }
 ```
-
 ## 基礎題：判別正方形
 ```C
 #include <stdio.h>
@@ -1097,7 +1037,6 @@ int main()
 	else printf(" It is not a square ");
 }
 ```
-
 ## 基礎題：將一連串整數相乘
 ```C
 #include <stdio.h>
@@ -1115,7 +1054,6 @@ int main()
 		printf("Product of the %d values is %d",n,ans);
 	}
 ```
-
 ## 基礎題：平年月份的天數
 ```C
 #include <stdio.h>
@@ -1151,7 +1089,6 @@ int main()
     }
 }
 ```
-
 ```C
 #include <stdio.h>
 #include <stdlib.h>
@@ -1192,7 +1129,6 @@ int main()
 	printf("%d\n", ans );
 }
 ```
-
 ```C
 #include <stdio.h>
 struct data{
@@ -1208,7 +1144,6 @@ int main()
     printf("%c %d\n", box.c, box.ans );
 }
 ```
-
 ```C
 #include <stdio.h>
 typedef struct data{
@@ -1225,7 +1160,6 @@ int main()
     printf("%c %d\n", box.c, box.ans );
 }
 ```
-
 ## 進階題：字串中的數字個數
 ```C
 #include <stdio.h>
@@ -1398,7 +1332,6 @@ int main()
 	}
 }
 ```
-
 ## UVA299
 ```C
 #include <stdio.h>
@@ -1430,7 +1363,6 @@ int main()
 	}
 }
 ```
-
 ## 進階題：數字個數
 ```C
 #include <stdio.h>
@@ -1443,7 +1375,6 @@ int main()
 	printf("%d",ans-1);
 }
 ```
-
 ## 基礎題：剩餘啤酒有幾手又幾瓶
 ```C
 #include <stdio.h>
@@ -1454,7 +1385,6 @@ int main()
 	printf("%d %d",(p-6*d)/6,(p-6*d)%6);
 }
 ```
-
 ## 基礎題：三數最小
 ```C
 #include <stdio.h>
@@ -1472,7 +1402,6 @@ int main()
 	printf("%d\n",min(x,y,z));
 }
 ```
-
 ## 基礎題：計算立方值
 ```C
 #include <stdio.h>
@@ -1485,7 +1414,6 @@ int main()
 	}
 }
 ```
-
 ## 進階題：判斷平方數
 ```C
 #include <stdio.h>
@@ -1499,7 +1427,6 @@ int main()
 	printf("%d",ans);
 }
 ```
-
 ## 進階題：計算質數個數
 ```C
 #include <stdio.h>
@@ -1516,7 +1443,6 @@ int main()
 	printf("%d",count);
 }
 ```
-
 ## 進階題：三數組合
 ```C
 #include <stdio.h>
@@ -1538,7 +1464,6 @@ int main()
 	printf("%d",a[0]*100+a[1]*10+a[2]+1);
 }
 ```
-
 ## 基礎題：找千位數
 ```C
 #include <stdio.h>
@@ -1806,4 +1731,59 @@ void mousePressed(){
   N++;//其實數字早就決定了 我們只是慢慢印出來 讓人以為你是慢慢抽
 }
 ```
+## 進階題：奇數反流
+```C
+#include <stdio.h>
+int main()
+{
+	int n,a[100],i;
+	scanf("%d",&n);
+	for(i=0;i<n;i++)
+		scanf("%d",&a[i]);
+	for(i=n-1;i>=0;i--){
+		if(a[i]%2==1) printf("%d ",a[i]);
+	}
+}
+```
+## 基礎題：大位王
+```C
+#include <stdio.h>
+int main()
+{
+	int c;
+	scanf("%d",&c);
+	if(c<0) c=-c;
+	while((c/10)>0){
+		c/=10;
+	}
+	printf("%d\n",c);
+}
+```
+## 基礎題：輸入西元y年，判斷該y年是否為閏年
+```C
+#include <stdio.h>
+int main()
+{
+	int n;
+	scanf("%d",&n);
+	if(n%4==0&&n%100!=0)
+		printf("%d is a leap year.\n",n);
+	else printf("%d is not a leap year.\n",n);
+}
+```
+## 基礎題：把數字倒著印出來
+```C
+#include <stdio.h>
+int main()
+{
+	int a[10],i;
+	for(i=0;i<=10;i++)
+		scanf("%d",&a[i]);
+	for(i=9;i>=0;i--)
+		printf("%d ",a[i]);
+}
+```
+## 基礎題：區間測速
+```C
 
+```
