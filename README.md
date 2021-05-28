@@ -1785,5 +1785,12 @@ int main()
 ```
 ## 基礎題：區間測速
 ```C
-
+#include <stdio.h>
+int main()
+{
+	int n;
+	scanf("%d",&n);
+	int a=60*60*1.2/n;
+	printf("%d",a);
+}
 ```
