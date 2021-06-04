@@ -1794,3 +1794,50 @@ int main()
 	printf("%d",a);
 }
 ```
+
+## week15
+```C
+void setup(){//設定 只做一次
+  size(400,200);
+  textSize(40);//字型大小
+}
+void draw(){//畫圖每秒60次
+  background(41,109,207);
+  int s=second();//秒鐘
+  text(s,100,100);
+}//任務 step02 (思考) 倒數
+```
+```C
+//秒數s:0,1,2...59
+//     59,58,57...0(幫手)59-s
+//============================
+//倒數:9,8,7...0
+void setup(){
+  size(400,200);
+  textSize(40);
+}
+void draw(){
+  background(41,109,207);//隨便猜的色彩
+  int s=second();//秒鐘
+  text(9-s%10,100,100);
+}
+// 原: 0,1,2,3,4,5,6,7,8,9
+//倒數:9,8,7,6,5,4,3,2,1,0
+```
+```C
+//發出聲音,有點難,要用外掛Processing的Sound
+//這裡叫PDE:Processing Developing Environment
+import processing.sound.*;
+SoundFile player;
+//tada.mp3檔,也可以拉進來這裡
+void setup(){
+  size(400,200);
+  player = new SoundFile(this, "tada.mp3");
+}
+void draw(){
+  background(51,114,191);
+}
+void mousePressed(){
+  player.play();
+}
+```
