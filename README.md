@@ -1888,3 +1888,68 @@ function draw(){//畫圖,每秒60次
   text(s,100,100);
 }//任務 step02 (思考) 倒數
 ```
+## 進階題：億萬富翁
+```C
+#include <stdio.h>
+#include <string.h>
+int main()
+{
+	char a[100];
+	scanf("%s",&a);
+	for(int i=0;i<strlen(a);i++){
+		if((strlen(a)-i)%3==0&&i!=0) printf(",");
+		printf("%c",a[i]);
+	}
+}
+```
+## 進階題：秒數換算
+```C
+#include <stdio.h>
+int main()
+{
+	int n;
+	scanf("%d",&n);
+	int sec=n%60;
+	int min=n/60%60;
+	int hour=n/(60*60);
+	printf("%02d:%02d:%02d",hour,min,sec);
+}
+```
+## 基礎題：水杯接水
+```C
+#include <stdio.h>
+int main()
+{
+	int n,m;
+	scanf("%d %d",&n,&m);
+	if(n%m==0) printf("%d",n/m);
+	else printf("%d",n/m+1);
+}
+```
+## 基礎題：平面兩座標的面積
+```C
+#include <stdio.h>
+#include <stdlib.h>
+int main()
+{
+	int x1,x2,y1,y2;
+	scanf("%d %d %d %d",&x1,&y1,&x2,&y2);
+	printf("%d",abs(x2-x1)*abs(y2-y1));
+}
+```
+## 基礎題：整數向量相加
+```C
+#include <stdio.h>
+int main()
+{
+	int n,a[10],b[10],i;
+	scanf("%d",&n);
+	for(i=0;i<n;i++){
+		scanf("%d",&a[i]);
+	}
+	for(i=0;i<n;i++){
+		scanf("%d",&b[i]);
+		printf("%d ",a[i]+b[i]);
+	}
+}
+```
