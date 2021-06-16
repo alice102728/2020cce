@@ -2079,3 +2079,74 @@ void draw(){
   }
 }
 ```
+## 進階題：大於漸增數列總和之最小整數
+```C
+#include <stdio.h>
+int main()
+{
+	int k,i,sum=0;
+	scanf("%d",&k);
+	for(i=1;i<k;i++){
+		sum+=i;
+		if(sum>k) break;
+	}
+	printf("%d",i);
+}
+```
+## 進階題：計算級數的值
+```C
+#include <stdio.h>
+int main()
+{
+	int n,i,sum=0;
+	scanf("%d",&n);
+	for(i=1;i<=(2*n+1);i+=2)
+		sum+=i;
+	printf("f(%d)=%d",n,sum);
+}
+```
+## 進階題：拆解輸入的正整數
+```C
+#include <stdio.h>
+int main()
+{
+	int n,i=1;
+	scanf("%d",&n);
+	while(n>0){
+		printf("%d ",(n%10)*i);
+		n/=10;
+		i*=10;
+	}
+}
+```
+## 基礎題：計算一組任意數目的整數的總和
+```C
+#include <stdio.h>
+int main()
+{
+	int sum=0,i,a;
+	scanf("%d",&a);
+	while(a!=0){
+		if(a>0) sum+=a;
+		scanf("%d",&a);
+	}
+	printf("%d",sum);
+}
+```
+## 基礎題：整數最大值、最小值
+```C
+#include <stdio.h>
+int main()
+{
+	int min,max,a;
+	scanf("%d",&a);
+	min=a;
+	max=a;
+	while(a!=0){
+		scanf("%d",&a);
+		if(min>a) min=a;
+		if(max<a) max=a;
+	}
+	printf("[%d,%d]",min,max);
+}
+```
